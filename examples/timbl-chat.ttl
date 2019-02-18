@@ -1,0 +1,185 @@
+@prefix : <#>.
+@prefix mee: <http://www.w3.org/ns/pim/meeting#>.
+@prefix ic: <http://www.w3.org/2002/12/cal/ical#>.
+@prefix XML: <http://www.w3.org/2001/XMLSchema#>.
+@prefix flow: <http://www.w3.org/2005/01/wf/flow#>.
+@prefix c: <https://www.w3.org/People/Berners-Lee/card#>.
+@prefix terms: <http://www.w3.org/ns/solid/terms#>.
+@prefix ui: <http://www.w3.org/ns/ui#>.
+@prefix c0: <https://digitalwaveride.solid.community/profile/card#>.
+@prefix c1: <https://textlibrary.inrupt.net/profile/card#>.
+@prefix c2: <https://megoth.solid.community/profile/card#>.
+@prefix c3: <https://fgbarone.solid.community/profile/card#>.
+@prefix c4: <https://fork.inrupt.net/profile/card#>.
+@prefix c5: <https://pod.jeremylaw.ca/profile/card#>.
+@prefix c6: <https://jmartin.solid.community/profile/card#>.
+@prefix c7: <https://robertgk.solid.community/profile/card#>.
+@prefix c8: <https://mtrier.solid.community/profile/card#>.
+@prefix c9: <https://justin.inrupt.net/profile/card#>.
+@prefix c10: <https://timbl.solid.community/profile/card#>.
+@prefix c11: <https://timbl-2018-demo.solid.community/profile/card#>.
+@prefix n0: <https://ruben.verborgh.org/profile/#>.
+@prefix c12: <https://csarven.solid.community/profile/card#>.
+@prefix c13: <https://angelo.veltens.org/profile/card#>.
+@prefix c14: <https://eduardoinnorway.solid.community/profile/card#>.
+@prefix c15: <https://eduardosolid.solidtest.space/profile/card#>.
+@prefix n1: <https://melvincarvalho.com/#>.
+@prefix c16: <https://gibsonf1.inrupt.net/profile/card#>.
+@prefix c17: <https://kidehen3.solid.openlinksw.com:8445/profile/card#>.
+@prefix c18: <https://bourgeoa.solid.community/profile/card#>.
+@prefix c19: <https://subetei.solid.community/profile/card#>.
+@prefix c20: <https://labra.solid.community/profile/card#>.
+@prefix c21: <https://amyvdh.databox.me/profile/card#>.
+@prefix c22: <https://jeffz.solid.community/profile/card#>.
+@prefix c23: <https://teodora.solid.community/profile/card#>.
+@prefix c24: <https://trankill.solid.community/profile/card#>.
+@prefix n2: <http://purl.org/dc/elements/1.1/>.
+
+:id1530912972126
+    ic:dtstart "2018-07-06T21:36:12Z"^^XML:dateTime;
+    flow:participant c:i;
+    terms:colorizeByAuthor false;
+    terms:expandImagesInline true;
+    ui:backgroundColor "#c1d0c8".
+:id1538415256782
+    ic:dtstart "2018-10-01T17:34:16Z"^^XML:dateTime;
+    flow:participant c0:me;
+    ui:backgroundColor "#c2c6c8".
+:id1538415459106
+    ic:dtstart "2018-10-01T17:37:39Z"^^XML:dateTime;
+    flow:participant c1:me;
+    terms:colorizeByAuthor false;
+    terms:expandImagesInline false;
+    ui:backgroundColor "#e0e8e0".
+:id1538415468178
+    ic:dtstart "2018-10-01T17:37:48Z"^^XML:dateTime;
+    flow:participant c2:me;
+    ui:backgroundColor "#d9cef1".
+:id1538415509711
+    ic:dtstart "2018-10-01T17:38:29Z"^^XML:dateTime;
+    flow:participant c3:me;
+    terms:colorizeByAuthor true;
+    terms:expandImagesInline true;
+    terms:inlineImageHeightEms 10;
+    terms:newestFirst true;
+    ui:backgroundColor "#c8f1f1".
+:id1538417119814
+    ic:dtstart "2018-10-01T18:05:19Z"^^XML:dateTime;
+    flow:participant c4:me;
+    terms:expandImagesInline true;
+    terms:inlineImageHeightEms 250;
+    ui:backgroundColor "#d9dece".
+:id1538418023336
+    ic:dtstart "2018-10-01T18:20:23Z"^^XML:dateTime;
+    flow:participant c5:me;
+    ui:backgroundColor "#feeed2".
+:id1538422464629
+    ic:dtstart "2018-10-01T19:34:24Z"^^XML:dateTime;
+    flow:participant c6:me;
+    ui:backgroundColor "#f9c9e4".
+:id1538597574158
+    ic:dtstart "2018-10-03T20:12:54Z"^^XML:dateTime;
+    flow:participant c7:me;
+    ui:backgroundColor "#c3cde3".
+:id1538623469869
+    ic:dtstart "2018-10-04T03:24:29Z"^^XML:dateTime;
+    flow:participant c8:me;
+    ui:backgroundColor "#e2fac8".
+:id1539905208283
+    ic:dtstart "2018-10-18T23:26:48Z"^^XML:dateTime;
+    flow:participant c9:me;
+    ui:backgroundColor "#ceeadf".
+:id1539958736305
+    ic:dtstart "2018-10-19T14:18:56Z"^^XML:dateTime;
+    flow:participant c10:me;
+    ui:backgroundColor "#cbfde1".
+:id1547226151017
+    ic:dtstart "2019-01-11T17:02:31Z"^^XML:dateTime;
+    flow:participant c11:me;
+    ui:backgroundColor "#cce5df".
+:id1548064539676
+    ic:dtstart "2019-01-21T09:55:39Z"^^XML:dateTime;
+    flow:participant n0:me;
+    ui:backgroundColor "#e6eaf4".
+:id1548076344088
+    ic:dtstart "2019-01-21T13:12:24Z"^^XML:dateTime;
+    flow:participant c12:me;
+    terms:colorizeByAuthor true;
+    terms:expandImagesInline true;
+    ui:backgroundColor "#d4e1dd".
+:id1548076700847
+    ic:dtstart "2019-01-21T13:18:20Z"^^XML:dateTime;
+    flow:participant c13:me;
+    ui:backgroundColor "#f7f0ee".
+:id1548083234102
+    ic:dtstart "2019-01-21T15:07:14Z"^^XML:dateTime;
+    flow:participant c14:me;
+    ui:backgroundColor "#d3e4d4".
+:id1548085315970
+    ic:dtstart "2019-01-21T15:41:55Z"^^XML:dateTime;
+    flow:participant c15:me;
+    terms:colorizeByAuthor true;
+    terms:expandImagesInline true;
+    ui:backgroundColor "#d8c4e5".
+:id1548106482912
+    ic:dtstart "2019-01-21T21:34:42Z"^^XML:dateTime;
+    flow:participant n1:me;
+    ui:backgroundColor "#eae1e9".
+:id1548722071047
+    ic:dtstart "2019-01-29T00:34:31Z"^^XML:dateTime;
+    flow:participant c16:me;
+    ui:backgroundColor "#e0cbd3".
+:id1548768970255
+    ic:dtstart "2019-01-29T13:36:10Z"^^XML:dateTime;
+    flow:participant c17:me;
+    ui:backgroundColor "#d7c2d1".
+:id1548771389984
+    ic:dtstart "2019-01-29T14:16:29Z"^^XML:dateTime;
+    flow:participant c18:me;
+    ui:backgroundColor "#f1fdd7".
+:id1549225203038
+    ic:dtstart "2019-02-03T20:20:03Z"^^XML:dateTime;
+    flow:participant c19:me;
+    ui:backgroundColor "#d3dad2".
+:id1549472860374
+    ic:dtstart "2019-02-06T17:07:40Z"^^XML:dateTime;
+    flow:participant c20:me;
+    ui:backgroundColor "#facefb".
+:id1549486474898
+    ic:dtstart "2019-02-06T20:54:34Z"^^XML:dateTime;
+    flow:participant c21:me;
+    ui:backgroundColor "#fde7cd".
+:id1549741756001
+    ic:dtstart "2019-02-09T19:49:16Z"^^XML:dateTime;
+    flow:participant c22:me;
+    terms:colorizeByAuthor true;
+    terms:expandImagesInline true;
+    terms:newestFirst true;
+    ui:backgroundColor "#def3de".
+:id1549864096567
+    ic:dtstart "2019-02-11T05:48:16Z"^^XML:dateTime;
+    flow:participant c23:me;
+    ui:backgroundColor "#d4e3d7".
+:id1549918734568
+    ic:dtstart "2019-02-11T20:58:54Z"^^XML:dateTime;
+    flow:participant c24:me;
+    ui:backgroundColor "#c1f0c6".
+:SharedPreferences
+    terms:colorizeByAuthor true;
+    terms:expandImagesInline true;
+    terms:inlineImageHeightEms 10.
+:this
+    a mee:LongChat;
+    n2:author c:i;
+    n2:created "2018-07-06T21:36:04Z"^^XML:dateTime;
+    n2:title "Chat channel";
+    flow:participation
+        :id1530912972126, :id1538415256782, :id1538415459106, :id1538415468178,
+        :id1538415509711, :id1538417119814, :id1538418023336, :id1538422464629,
+        :id1538597574158, :id1538623469869, :id1539905208283, :id1539958736305,
+        :id1547226151017, :id1548064539676, :id1548076344088, :id1548076700847,
+        :id1548083234102, :id1548085315970, :id1548106482912, :id1548144625610,
+        :id1548722071047, :id1548768970255, :id1548771389984, :id1549225203038,
+        :id1549472860374, :id1549486474898, :id1549741756001, :id1549864096567,
+        :id1549918734568;
+    ui:sharedPreferences :SharedPreferences.
