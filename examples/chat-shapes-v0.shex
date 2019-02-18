@@ -1,0 +1,71 @@
+prefix sh:     <http://www.w3.org/ns/shacl#> 
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix foaf:   <http://xmlns.com/foaf/0.1/>
+prefix dc: <http://purl.org/dc/elements/1.1/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix terms: <http://purl.org/dc/terms/>
+prefix flow: <http://www.w3.org/2005/01/wf/flow#>
+prefix ical: <http://www.w3.org/2002/12/cal/ical#>
+prefix mee: <http://www.w3.org/ns/pim/meeting#>
+prefix sioc: <http://rdfs.org/sioc/ns#>
+prefix solid: <http://www.w3.org/ns/solid/terms#>
+prefix ui: <http://www.w3.org/ns/ui#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix : <#>
+
+# This file is based on: https://github.com/solid/chat-pane/blob/chat-ui/shapes/chat-shapes.ttl
+# It contains a cleaned version using shape references
+
+##################### Chat Channel
+
+:ChatChannelShape EXTRA a { 
+  a          [ mee:LongChat ] ;
+  dc:author  .          + ;
+  dc:title   xsd:string ;
+  dc:created xsd:dateTime ;
+  ui:sharedPreferences @:SharedPreferencesShape * ;
+  flow:participation @:ParticipationShape *
+} 
+
+################ Shared Preferences
+
+:SharedPreferencesShape {
+    solid:expandImagesInline xsd:boolean ? ;
+    solid:inlineImageHeightEms xsd:integer ? ;
+    solid:newestFirst xsd:boolean ?
+}
+
+################ Participation objects
+
+:ParticipationShape {
+    ical:dtstart               xsd:dateTime ;
+    flow:participant           @:AgentShape ;
+    schema:target              @:MessageShape ? ;                               
+    solid:colorizeByAuthor     xsd:boolean ? ;
+    solid:expandImagesInline   xsd:boolean ? ;
+    solid:inlineImageHeightEms xsd:integer ? ;
+    solid:newestFirst          xsd:boolean ? ;
+    ui:backgroundColor         xsd:string /#[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]/ ?
+}
+
+:MessageShape {
+    terms:created xsd:dateTime ;
+    foaf:maker    @:AgentShape ;
+    sioc:content  xsd:string ;
+    ^flow:message . ;
+}
+
+########## Actions express sentiments
+
+:ActionShape EXTRA a {
+  a            [ schema:Action ] ; 
+  schema:agent @:AgentShape ?
+}
+
+######### Agent shape
+
+:AgentShape EXTRA a {
+  a [ schema:Agent] 
+}
