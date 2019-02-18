@@ -1,0 +1,58 @@
+@prefix :      <http://example.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix n0:    <http://example.org/n0> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#> .
+@prefix n1:    <http://example.org/n1> .
+@prefix c:     <http://example.org/c> .
+@prefix n2:    <http://example.org/n2> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix mee:   <http://www.w3.org/ns/pim/meeting#> .
+@prefix n:     <http://example.org/n> .
+@prefix ical:  <http://www.w3.org/2002/12/cal/ical#> .
+@prefix ui:    <http://www.w3.org/ns/ui#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix XML:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix ic:    <http://www.w3.org/2002/12/cal/ical#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix flow:  <http://www.w3.org/2005/01/wf/flow#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix sioc:  <http://rdfs.org/sioc/ns#> .
+
+:this   a                     mee:LongChat ;
+        dc:author             :ci ;
+        dc:created            "2018-07-06T21:36:04Z"^^XML:dateTime ;
+        dc:title              "Chat channel" ;
+        flow:participation    :id1530912972126 , :id1538415256782 , :id1538415459106 ;
+        ui:sharedPreferences  :pref1 .
+
+:id1538415459106  terms:expandImagesInline
+                true ;
+        ic:dtstart                "2018-07-07T01:12:12Z"^^XML:dateTime ;
+        flow:participant          :ci ;
+        ui:backgroundColor        "#c1d0c8" .
+
+:id1530912972126  terms:expandImagesInline
+                true ;
+        ic:dtstart                "2018-07-06T21:36:12Z"^^XML:dateTime ;
+        flow:participant          :ci ;
+        ui:backgroundColor        "#c1d0c8" .
+
+:Msg1549975677890  :n0maker  :ci ;
+        :ncontent      "Tuesday" ;
+        terms:created  "2019-02-12T12:47:57Z"^^XML:dateTime .
+
+:id1538415256782  terms:expandImagesInline
+                true ;
+        ic:dtstart                "2018-08-08T11:16:12Z"^^XML:dateTime ;
+        flow:participant          :ci ;
+        ui:backgroundColor        "#c1d0c8" .
+
+:pref1  solid:expandImagesInline    true ;
+        solid:inlineImageHeightEms  11 ;
+        solid:newestFirst           true .
+
+:id1549976046538  a    schema:AgreeAction ;
+        schema:agent   :ci ;
+        schema:target  :Msg1549975677890 .

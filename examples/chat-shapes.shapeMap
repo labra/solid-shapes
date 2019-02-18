@@ -1,0 +1,5 @@
+{ FOCUS a mee:LongChat}@:ChatChannelShape,
+{ _ ui:sharedPreferences FOCUS}@:SharedPreferencesShape,
+{ _ flow:participation FOCUS}@:ParticipationShape,
+{ _ flow:message FOCUS}@:MessageShape,
+{ FOCUS schema:target _}@:ActionShape
