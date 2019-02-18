@@ -32,9 +32,12 @@ prefix : <#>
 ################ Shared Preferences
 
 :SharedPreferencesShape {
+   $:Preferences (
     solid:expandImagesInline xsd:boolean ? ;
     solid:inlineImageHeightEms xsd:integer ? ;
-    solid:newestFirst xsd:boolean ?
+    solid:newestFirst xsd:boolean ? ;
+    ui:backgroundColor xsd:string /#[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]/ ?
+   )
 }
 
 ################ Participation objects
@@ -42,12 +45,8 @@ prefix : <#>
 :ParticipationShape {
     ical:dtstart               xsd:dateTime ?   ;
     flow:participant           @:AgentShape ?   ;
-    schema:target              @:MessageShape ? ;                               
-    solid:colorizeByAuthor     xsd:boolean ? ;
-    solid:expandImagesInline   xsd:boolean ? ;
-    solid:inlineImageHeightEms xsd:integer ? ;
-    solid:newestFirst          xsd:boolean ? ;
-    ui:backgroundColor         xsd:string /#[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]/ ?
+    schema:target              @:MessageShape ? ;
+    &:Preferences 
 }
 
 :MessageShape {
